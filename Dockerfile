@@ -12,7 +12,7 @@ RUN cd /tmp && wget https://github.com/opencv/opencv/archive/3.4.2.zip
 RUN cd /tmp && unzip /tmp/3.4.2.zip
 RUN cd /tmp/opencv-3.4.2 && mkdir build && cd build && cmake -D CMAKE_BUILD_TYPE=Release -D CMAKE_INSTALL_PREFIX=/usr/local ..
 RUN cd /tmp/opencv-3.4.2/build && make
-RUN cd /tmp/opencv-3.4.2/build/doc && make doxygen
+# RUN cd /tmp/opencv-3.4.2/build/doc && make doxygen
 RUN cd /tmp/opencv-3.4.2/build && make install
 
 
