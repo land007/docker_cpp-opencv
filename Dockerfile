@@ -1,4 +1,4 @@
-FROM land007/cpp-grpc:latest
+FROM land007/cpp-grpc:16.04
 
 MAINTAINER Yiqiu Jia <yiqiujia@hotmail.com>
 
