@@ -15,5 +15,7 @@ RUN cd /tmp/opencv-3.4.2 && mkdir build && cd build && cmake -D CMAKE_BUILD_TYPE
 RUN cd /tmp/opencv-3.4.2/build && make && make install && rm -rf /tmp/opencv-3.4.2
 # RUN cd /tmp/opencv-3.4.2/build/doc && make doxygen
 
+RUN echo $(date "+%Y-%m-%d_%H:%M:%S") > /.image_time
+RUN echo "land007/cpp-opencv" > /.image_name
 
 #docker stop cpp-opencv ; docker rm cpp-opencv ; docker run -it --privileged --name cpp-opencv land007/cpp-opencv:latest
